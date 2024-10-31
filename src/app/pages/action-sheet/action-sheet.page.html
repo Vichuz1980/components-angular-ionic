@@ -1,0 +1,17 @@
+<app-header [title]="'Action Sheet'"></app-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-button id="open-action-sheet">Open</ion-button>
+  <ion-action-sheet
+    trigger="open-action-sheet"
+    header="Example header"
+    subHeader="Example subheader"
+    [buttons]="actionSheetButtons"
+    (didDismiss)="logResult($event)"
+  ></ion-action-sheet>
+
+  <hr>
+  <ion-label>Accion seleccionada: {{action}}</ion-label>
+
+</ion-content>

@@ -1,0 +1,13 @@
+<app-header [title]="'Camera'"></app-header>
+
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+    <ion-button (click)="takePhoto()" expand="block" fill="clear" shape="round">
+      Click me
+    </ion-button>
+
+    <hr>
+    Base64: {{base64}}
+
+</ion-content>
